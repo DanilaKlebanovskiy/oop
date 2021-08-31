@@ -10,7 +10,8 @@ const drinkCola = new Drink(Drink.COLA)
 ```
 ### to create Salad
 ```
-const saladCeaser = new Salad(Salad.CEASER)
+const size = 200
+const saladCeaser = new Salad(size, Salad.CEASER)
 ```
 ### Food's method
 ```
@@ -24,19 +25,20 @@ calculateCalories()
 ```
 const orderOne = new Order(smallHamb)
 orderOne.add(drinkCola)
-orderOne.add(Salad) 
+orderOne.add(saladCeaser)
 // to delete Cola
 orderOne.delete(1)
 // to calculate total price
-orderOne.totalPrice() 
+orderOne.getTotalPrice() 
 // to calculate total calories
-orderOne.totalCal() 
+orderOne.getTotalCal() 
 ```
 
 ### to pay order and forbid any changes
 
 ```
 orderOne.paid()
-orderOne.add(new Drink(Drink.COLA)) // throw exception 
+orderOne.add(new Drink(Drink.COLA))  
 ```
 
+if you have problem with CORSE you should use local server.
